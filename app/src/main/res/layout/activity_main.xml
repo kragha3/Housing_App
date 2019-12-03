@@ -9,17 +9,19 @@
         android:id="@+id/titleLabel"
         android:layout_width="match_parent"
         android:layout_height="98dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="80dp"
         android:autoText="false"
-        android:paddingBottom="0dp"
-        android:text="   Find Your Perfect Campus Apartment!"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:padding="20dp"
+        android:paddingBottom="20dp"
+        android:text="Find Your Perfect Campus Apartment!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:fontFamily="sans-serif-black" />
 
     <ImageView
         android:id="@+id/uiuc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="285dp"
+        android:layout_height="273dp"
+        android:layout_marginLeft="63dp"
         app:srcCompat="@drawable/uiuc" />
 
     <Button
