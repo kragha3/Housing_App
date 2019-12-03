@@ -12,6 +12,9 @@
         <activity
             android:name=".NewSearch"
             android:label="NewSearch"></activity>
+        <activity
+            android:name=".Results"
+            android:label="Results"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

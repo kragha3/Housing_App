@@ -48,7 +48,7 @@ public class NewSearch extends AppCompatActivity {
         roomList.add("2");
         roomList.add("3");
         roomList.add("4");
-        ArrayAdapter<String> setRooms = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, locationList);
+        ArrayAdapter<String> setRooms = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, roomList);
         setRooms.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         rooms.setAdapter(setRooms);
 
@@ -58,7 +58,7 @@ public class NewSearch extends AppCompatActivity {
         bathroomList.add("2");
         bathroomList.add("3");
         bathroomList.add("4");
-        ArrayAdapter<String> setBathrooms = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, locationList);
+        ArrayAdapter<String> setBathrooms = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, bathroomList);
         setBathrooms.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         bathrooms.setAdapter(setBathrooms);
 
