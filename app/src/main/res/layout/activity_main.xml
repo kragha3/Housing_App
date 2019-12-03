@@ -30,6 +30,6 @@
         android:layout_marginTop="50dp"
         android:layout_marginRight="80dp"
         android:paddingTop="0dp"
-        android:text="Start Searching!"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        android:text="START SEARCHING!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 </LinearLayout>
