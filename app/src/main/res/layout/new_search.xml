@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price Range"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <Spinner
+        android:id="@+id/priceOptions"
+        android:layout_width="match_parent"
+        android:layout_height="52dp" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Approximate Location"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <Spinner
+        android:id="@+id/locationOptions"
+        android:layout_width="match_parent"
+        android:layout_height="76dp" />
+
+    <TextView
+        android:id="@+id/rooms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Number of Rooms"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <Spinner
+        android:id="@+id/roomOptions"
+        android:layout_width="match_parent"
+        android:layout_height="76dp" />
+
+    <TextView
+        android:id="@+id/bathrooms"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Number of Bathrooms"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <Spinner
+        android:id="@+id/bathroomOptions"
+        android:layout_width="match_parent"
+        android:layout_height="62dp" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="60dp"
+        android:paddingLeft="0dp"
+        android:text="Find My Apartment!" />
+</LinearLayout>
