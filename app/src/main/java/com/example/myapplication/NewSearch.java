@@ -4,6 +4,7 @@ package com.example.myapplication;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ScrollView;
@@ -31,6 +32,7 @@ public class NewSearch extends AppCompatActivity {
         ArrayAdapter<String> setPrice = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, priceList);
         setPrice.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         price.setAdapter(setPrice);
+
 
         Spinner location = findViewById(R.id.locationOptions);
         ArrayList<String> locationList = new ArrayList<>();
@@ -64,9 +66,13 @@ public class NewSearch extends AppCompatActivity {
 
         search = (Button) findViewById(R.id.searchButton);
         search.setOnClickListener(new View.OnClickListener() {
+            int priceSelected = price.getSelectedItemPosition();
+            int locationSelected = location.getSelectedItemPosition();
+            int roomSelected = rooms.getSelectedItemPosition();
+            int bathSelected = bathrooms.getSelectedItemPosition();
             @Override
             public void onClick(View view) {
-                launchResults();
+                launchResults():
             }
         });
 
