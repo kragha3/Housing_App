@@ -4,6 +4,7 @@ package com.example.myapplication;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ScrollView;
@@ -18,12 +19,29 @@ public class NewSearch extends AppCompatActivity {
 
     private Button search;
 
+    private int priceSelected;
+
+    private Spinner price;
+
+    private int locationSelected;
+
+    private Spinner location;
+
+    private int roomSelected;
+
+    private Spinner rooms;
+
+    private int bathSelected;
+
+    private Spinner bathrooms;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.new_search);
 
-        Spinner price = findViewById(R.id.priceOptions);
+        price = findViewById(R.id.priceOptions);
         ArrayList<String> priceList = new ArrayList<>();
         priceList.add("$300-500");
         priceList.add("$500-700");
@@ -32,7 +50,8 @@ public class NewSearch extends AppCompatActivity {
         setPrice.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         price.setAdapter(setPrice);
 
-        Spinner location = findViewById(R.id.locationOptions);
+
+        location = findViewById(R.id.locationOptions);
         ArrayList<String> locationList = new ArrayList<>();
         locationList.add("Near Main Quad");
         locationList.add("Near Bardeen Quad");
@@ -42,7 +61,7 @@ public class NewSearch extends AppCompatActivity {
         setLocation.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         location.setAdapter(setLocation);
 
-        Spinner rooms = findViewById(R.id.roomOptions);
+        rooms = findViewById(R.id.roomOptions);
         ArrayList<String> roomList = new ArrayList<>();
         roomList.add("1");
         roomList.add("2");
@@ -52,7 +71,7 @@ public class NewSearch extends AppCompatActivity {
         setRooms.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         rooms.setAdapter(setRooms);
 
-        Spinner bathrooms = findViewById(R.id.bathroomOptions);
+        bathrooms = findViewById(R.id.bathroomOptions);
         ArrayList<String> bathroomList = new ArrayList<>();
         bathroomList.add("1");
         bathroomList.add("2");
@@ -66,7 +85,7 @@ public class NewSearch extends AppCompatActivity {
         search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                launchResults();
+                launchResults():
             }
         });
 
@@ -75,6 +94,14 @@ public class NewSearch extends AppCompatActivity {
 
     private void launchResults() {
         Intent intent = new Intent(this, Results.class);
+        priceSelected = price.getSelectedItemPosition();
+        locationSelected = location.getSelectedItemPosition();
+        roomSelected = rooms.getSelectedItemPosition();
+        bathSelected = bathrooms.getSelectedItemPosition();
+        intent.putExtra("price", priceSelected);
+        intent.putExtra("location", locationSelected);
+        intent.putExtra("rooms", roomSelected);
+        intent.putExtra("bathrooms", bathSelected);
         startActivity(intent);
     }
 

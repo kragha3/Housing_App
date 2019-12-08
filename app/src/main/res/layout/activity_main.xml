@@ -22,7 +22,7 @@
         android:id="@+id/uiuc"
         android:layout_width="wrap_content"
         android:layout_height="367dp"
-        android:layout_marginLeft="27dp"
+        android:layout_marginLeft="20dp"
         app:srcCompat="@drawable/uiuc" />
 
     <Button
@@ -32,6 +32,7 @@
         android:layout_marginLeft="80dp"
         android:layout_marginTop="50dp"
         android:layout_marginRight="80dp"
+        android:paddingLeft="0dp"
         android:paddingTop="15dp"
         android:paddingBottom="15dp"
         android:text="Start Searching!"
