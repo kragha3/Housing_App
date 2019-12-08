@@ -85,7 +85,7 @@ public class NewSearch extends AppCompatActivity {
         search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                launchResults():
+                launchResults();
             }
         });
 
