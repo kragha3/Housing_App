@@ -51,14 +51,6 @@ public class Results extends AppCompatActivity {
     }
     private void graphData() {
         /**
-         * retreives intent data to populate bar chart.
-         */
-        getIntent();
-        String value = getIntent().getStringExtra("price");
-        String location = getIntent().getStringExtra("location");
-        String room = getIntent().getStringExtra("room");
-        String bathrooms = getIntent().getStringExtra("bathroom");
-        /**
          * Location of the following code is uncertain :/.
          */
         barChart = findViewById(R.id.mp_BarChart);
