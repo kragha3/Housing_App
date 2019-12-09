@@ -5,6 +5,7 @@ public class Apartment {
     private int bedrooms;
     private int bathrooms;
     private String location;
+    private int pointCounter;
     Apartment(int setPrice, int setRooms, int setBathrooms, String setLocation) {
         price = setPrice;
         bedrooms = setRooms;
@@ -22,5 +23,9 @@ public class Apartment {
     }
     public String getLocation() {
         return location;
+    }
+
+    public int addPoint() {
+        pointCounter++;
     }
 }
