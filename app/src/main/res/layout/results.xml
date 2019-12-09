@@ -10,7 +10,19 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:text="Results:"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/explanation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Each bar represents apartments 1-9 and the amount of your selected preferences they match." />
+
+    <TextView
+        android:id="@+id/moreDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="More details about each apartment are located on the next page." />
 
     <com.github.mikephil.charting.charts.BarChart
         android:id="@+id/mp_BarChart"

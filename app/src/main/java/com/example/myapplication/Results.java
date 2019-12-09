@@ -41,7 +41,7 @@ public class Results extends AppCompatActivity {
         bathSelected = getIntent().getIntExtra("bathrooms", 0);
 
         barChart = findViewById(R.id.mp_BarChart);
-        BarDataSet barDataSet1 = new BarDataSet(dataValues(), "DataSet1");
+        BarDataSet barDataSet1 = new BarDataSet(dataValues(), "Apartments");
         BarData barData = new BarData();
         barData.addDataSet(barDataSet1);
         barChart.setData(barData);
@@ -76,7 +76,7 @@ public class Results extends AppCompatActivity {
         dataVals.add(new BarEntry(9,points(apartment9)));
         XAxis x = barChart.getXAxis();
         String[] values = new String[] {"Apt 1", "Apt 2", "Apt 3", "Apt 4", "Apt 5", "Apt 6",
-                "Apt 7", "Apt 8", "Apt 9"}
+                "Apt 7", "Apt 8", "Apt 9"};
         x.setValueFormatter(new MyXAxisValueFormatter(values));
 
         return dataVals;
