@@ -17,12 +17,27 @@ import java.util.ArrayList;
 public class Results extends AppCompatActivity {
 
     private Button searchAgain;
+
     BarChart barChart;
+
+    private int priceSelected;
+
+    private int locationSelected;
+
+    private int roomSelected;
+
+    private int bathSelected;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.results);
+        getIntent();
+        priceSelected = getIntent().getIntExtra("price", 0);
+        locationSelected = getIntent().getIntExtra("location", 0);
+        roomSelected = getIntent().getIntExtra("rooms", 0);
+        bathSelected = getIntent().getIntExtra("bathrooms", 0);
+
 
         searchAgain = (Button) findViewById(R.id.searchAgain);
         searchAgain.setOnClickListener(new View.OnClickListener() {
@@ -73,7 +88,6 @@ public class Results extends AppCompatActivity {
          */
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
-
 
     }
 
