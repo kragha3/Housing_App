@@ -38,7 +38,12 @@ public class Results extends AppCompatActivity {
         roomSelected = getIntent().getIntExtra("rooms", 0);
         bathSelected = getIntent().getIntExtra("bathrooms", 0);
 
-        graphData();
+        barChart = findViewById(R.id.mp_BarChart);
+        BarDataSet barDataSet1 = new BarDataSet(dataValues(), "DataSet1");
+        BarData barData = new BarData();
+        barData.addDataSet(barDataSet1);
+        barChart.setData(barData);
+        barChart.invalidate();
 
         searchAgain = (Button) findViewById(R.id.searchAgain);
         searchAgain.setOnClickListener(new View.OnClickListener() {
@@ -48,18 +53,8 @@ public class Results extends AppCompatActivity {
             }
         });
 
-
     }
-    private void graphData() {
 
-        barChart = findViewById(R.id.mp_BarChart);
-        BarDataSet barDataSet1 = new BarDataSet(dataValues(), "DataSet1");
-        BarData barData = new BarData();
-        barData.addDataSet(barDataSet1);
-        barChart.setData(barData);
-        barChart.invalidate();
-
-    }
     private ArrayList<BarEntry> dataValues() {
         /**
          * adds location points for each apartment (?).
