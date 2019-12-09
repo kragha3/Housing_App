@@ -98,10 +98,10 @@ public class NewSearch extends AppCompatActivity {
         locationSelected = location.getSelectedItemPosition();
         roomSelected = rooms.getSelectedItemPosition();
         bathSelected = bathrooms.getSelectedItemPosition();
-        intent.putExtra("price", priceSelected);
-        intent.putExtra("location", locationSelected);
-        intent.putExtra("rooms", roomSelected);
-        intent.putExtra("bathrooms", bathSelected);
+        intent.putExtra("price", priceSelected + 1);
+        intent.putExtra("location", locationSelected + 1);
+        intent.putExtra("rooms", roomSelected + 1);
+        intent.putExtra("bathrooms", bathSelected + 1);
         startActivity(intent);
     }
 

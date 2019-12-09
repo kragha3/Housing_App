@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 public class Results extends AppCompatActivity {
 
-    private Button searchAgain;
+    private Button details;
 
     BarChart barChart;
 
@@ -45,11 +45,11 @@ public class Results extends AppCompatActivity {
         barChart.setData(barData);
         barChart.invalidate();
 
-        searchAgain = (Button) findViewById(R.id.searchAgain);
-        searchAgain.setOnClickListener(new View.OnClickListener() {
+        details = (Button) findViewById(R.id.details);
+        details.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                launchMain();
+                launchDetails();
             }
         });
 
@@ -76,11 +76,11 @@ public class Results extends AppCompatActivity {
         return dataVals;
     }
 
-    private void launchMain() {
+    private void launchDetails() {
         /**
          * launchMain() takes the app back to the main screen.
          */
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, Details.class);
         startActivity(intent);
 
     }

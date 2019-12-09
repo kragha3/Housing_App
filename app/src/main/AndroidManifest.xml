@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".Details"
+            android:label="Details"></activity>
+        <activity
             android:name=".NewSearch"
             android:label="NewSearch"></activity>
         <activity
