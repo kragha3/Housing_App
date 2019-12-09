@@ -38,6 +38,7 @@ public class Results extends AppCompatActivity {
         roomSelected = getIntent().getIntExtra("rooms", 0);
         bathSelected = getIntent().getIntExtra("bathrooms", 0);
 
+        graphData();
 
         searchAgain = (Button) findViewById(R.id.searchAgain);
         searchAgain.setOnClickListener(new View.OnClickListener() {
@@ -50,9 +51,7 @@ public class Results extends AppCompatActivity {
 
     }
     private void graphData() {
-        /**
-         * Location of the following code is uncertain :/.
-         */
+
         barChart = findViewById(R.id.mp_BarChart);
         BarDataSet barDataSet1 = new BarDataSet(dataValues(), "DataSet1");
         BarData barData = new BarData();
@@ -69,7 +68,15 @@ public class Results extends AppCompatActivity {
         /**
          * Data to populate the graph with.
          */
-        dataVals.add(new BarEntry(0,1));
+        dataVals.add(new BarEntry(1,points(apartment1)));
+        dataVals.add(new BarEntry(2,points(apartment2)));
+        dataVals.add(new BarEntry(3,points(apartment3)));
+        dataVals.add(new BarEntry(4,points(apartment4)));
+        dataVals.add(new BarEntry(5,points(apartment5)));
+        dataVals.add(new BarEntry(6,points(apartment6)));
+        dataVals.add(new BarEntry(7,points(apartment7)));
+        dataVals.add(new BarEntry(8,points(apartment8)));
+        dataVals.add(new BarEntry(9,points(apartment9)));
 
         return dataVals;
     }
