@@ -43,9 +43,9 @@ public class NewSearch extends AppCompatActivity {
 
         price = findViewById(R.id.priceOptions);
         ArrayList<String> priceList = new ArrayList<>();
-        priceList.add("$300-500");
-        priceList.add("$500-700");
-        priceList.add("$700+");
+        priceList.add("$400-600");
+        priceList.add("$600-800");
+        priceList.add("$800+");
         ArrayAdapter<String> setPrice = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, priceList);
         setPrice.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         price.setAdapter(setPrice);
