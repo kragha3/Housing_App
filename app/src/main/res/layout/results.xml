@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:text="Results:"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
     <TextView
         android:id="@+id/explanation"

@@ -74,10 +74,6 @@ public class Results extends AppCompatActivity {
         dataVals.add(new BarEntry(7,points(apartment7)));
         dataVals.add(new BarEntry(8,points(apartment8)));
         dataVals.add(new BarEntry(9,points(apartment9)));
-        XAxis x = barChart.getXAxis();
-        String[] values = new String[] {"Apt 1", "Apt 2", "Apt 3", "Apt 4", "Apt 5", "Apt 6",
-                "Apt 7", "Apt 8", "Apt 9"};
-        x.setValueFormatter(new MyXAxisValueFormatter(values));
 
         return dataVals;
     }
