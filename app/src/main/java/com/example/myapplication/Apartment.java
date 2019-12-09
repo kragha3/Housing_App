@@ -25,6 +25,14 @@ public class Apartment {
     public int getPrice() {
         return price;
     }
+
+    public int getPriceIndex() {
+        return priceIndex;
+    }
+
+    public int getLocationIndex() {
+        return locationIndex;
+    }
     public int getBedrooms() {
         return bedrooms;
     }
