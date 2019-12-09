@@ -12,6 +12,11 @@
         android:text="Your Top Three Options:"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
 
+    <com.github.mikephil.charting.charts.BarChart
+        android:id = "@+id/mp_BarChart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
     <TextView
         android:id="@+id/option1"
         android:layout_width="match_parent"
