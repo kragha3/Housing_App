@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/apartments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apartment Details"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <TextView
+        android:id="@+id/one"
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:text="1: Bailey Student Apartments"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/oneDetails"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="$700, 1 bed, 1 bed, near Bardeen Quad"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/two"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:text="2: 40 E John Apartments"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/twoDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="$400, 3 bed, 2 bath, near Ike"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3: 507 S 4th Apartments"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/threeDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="$445, 4 bed, 2 bath, near Bardeen Quad"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4: 55 E Green St."
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/fourDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="$900, 2 bed, 2 bath, near Green St."
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/five"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5: 102 E Gregory Dr."
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/fiveDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="$512, 2 bed, 1 bath, near Ike"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/six"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="6: 102 E Gregory Dr. (2)"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/sixDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="$478, 3 bed, 2 bath, near Ike"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/seven"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="7: 615 S Wright St."
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/sevenDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="$1185, 2 bed, 1 bath, near Bardeen Quad"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/eight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="8: 707 S 6th St."
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/eightDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="$1060, 1 bed, 1 bath, near Main Quad"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/nine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="9: 408 E Healey"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/nineDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="$722, 4 bed, 2 bath, near Main Quad"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <Button
+        android:id="@+id/searchAgain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="70dp"
+        android:text="Search Again" />
+</LinearLayout>
