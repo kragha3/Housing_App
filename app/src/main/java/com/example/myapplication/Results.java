@@ -82,6 +82,21 @@ public class Results extends AppCompatActivity {
         startActivity(intent);
 
     }
+    public int points(Apartment input) {
+        if (input.getPriceIndex() == priceSelected) {
+            input.addPoint();
+        }
+        if (input.getLocationIndex() == locationSelected) {
+            input.addPoint();
+        }
+        if (input.getBathrooms() == bathSelected) {
+            input.addPoint();
+        }
+        if (input.getBedrooms() == roomSelected) {
+            input.addPoint();
+        }
+        return input.getPoints();
+    }
 
     /**
      * Make a point system for matching.
@@ -93,8 +108,6 @@ public class Results extends AppCompatActivity {
     Apartment apartment5 = new Apartment("102 E Gregory Dr.",512, 1, 3,2,1, "Near Ike");
     Apartment apartment6 = new Apartment("102 E Gregory Dr. (2)",478, 1, 3, 3,2, "Near Ike");
     Apartment apartment7 = new Apartment("615 S Wright St.",1185, 3, 2, 2, 1, "Near Bardeen Quad");
-    Apartment apartment8 = new Apartment("need name",1060, 3, 1,1, 1, "Near Main Quad");
+    Apartment apartment8 = new Apartment("Apartment 8",1060, 3, 1,1, 1, "Near Main Quad");
     Apartment apartment9 = new Apartment("408 E Healey",722, 2, 1,4, 2, "Near Main Quad");
-
-
 }
