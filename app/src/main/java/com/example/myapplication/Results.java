@@ -76,6 +76,10 @@ public class Results extends AppCompatActivity {
 
 
     }
+
+    /**
+     * Make a point system for matching.
+     */
     Apartment apartment1 = new Apartment(700, 1, 1, "Near Bardeen Quad");
     Apartment apartment2 = new Apartment(1200, 3, 2, "Near Ike");
     Apartment apartment3 = new Apartment(1780, 4, 2, "Near Bardeen Quad");
@@ -85,5 +89,6 @@ public class Results extends AppCompatActivity {
     Apartment apartment7 = new Apartment(2370, 2, 1, "Near Bardeen Quad");
     Apartment apartment8 = new Apartment(1060, 1, 1, "Near Main Quad");
     Apartment apartment9 = new Apartment(2888, 4, 2, "Near Main Quad");
+
 
 }
