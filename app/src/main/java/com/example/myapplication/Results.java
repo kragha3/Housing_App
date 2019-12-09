@@ -80,15 +80,15 @@ public class Results extends AppCompatActivity {
     /**
      * Make a point system for matching.
      */
-    Apartment apartment1 = new Apartment(700, 1, 1, "Near Bardeen Quad");
-    Apartment apartment2 = new Apartment(1200, 3, 2, "Near Ike");
-    Apartment apartment3 = new Apartment(1780, 4, 2, "Near Bardeen Quad");
-    Apartment apartment4 = new Apartment(1800, 2, 2, "Near Green St.");
-    Apartment apartment5 = new Apartment(1024, 2,1, "Near Ike");
-    Apartment apartment6 = new Apartment(1434, 3,2, "Near Ike");
-    Apartment apartment7 = new Apartment(2370, 2, 1, "Near Bardeen Quad");
-    Apartment apartment8 = new Apartment(1060, 1, 1, "Near Main Quad");
-    Apartment apartment9 = new Apartment(2888, 4, 2, "Near Main Quad");
+    Apartment apartment1 = new Apartment("Bailey Student Apartments",700, 1, 1, "Near Bardeen Quad");
+    Apartment apartment2 = new Apartment("40 E John Apartments", 1200, 3, 2, "Near Ike");
+    Apartment apartment3 = new Apartment("507 S 4th Apartments", 1780, 4, 2, "Near Bardeen Quad");
+    Apartment apartment4 = new Apartment("55 E Green St.",1800, 2, 2, "Near Green St.");
+    Apartment apartment5 = new Apartment("102 E. Gregory Dr. (2)", 1024, 2,1, "Near Ike");
+    Apartment apartment6 = new Apartment("102 E. Gregory Dr. (3)",1434, 3,2, "Near Ike");
+    Apartment apartment7 = new Apartment("615 S. Wright St.", 2370, 2, 1, "Near Bardeen Quad");
+    Apartment apartment8 = new Apartment("need name", 1060, 1, 1, "Near Main Quad");
+    Apartment apartment9 = new Apartment("408 E. Healey", 2888, 4, 2, "Near Main Quad");
 
 
 }
